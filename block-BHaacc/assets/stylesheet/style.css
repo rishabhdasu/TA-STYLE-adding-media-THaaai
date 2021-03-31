@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Custom Styles */
+
+.bg-img {
+    height: 550px;
+    background: linear-gradient(to right,rgba(15, 114, 228, 0.8), rgba(19, 241, 137, 0.8)) ,
+     url(../media/home-bg.jpg) no-repeat center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+.header {
+    padding: 24px 0;
+}
+.brand {
+    font-size: 32px;
+    font-weight: 800;
+}
+.nav-bar li {
+    margin-right: 54px;
+}
+.icons a {
+    margin-right: 12px;
+}
+.btn {
+    background-color: red;
+    border: 0;
+    border-radius: 35px;
+    padding: 14px 8px;
+    font-weight: 600;
+}
+.btn a {
+    margin-left: 9px;
+}
+/* Intro Section */
+.intro {
+    margin: 80px auto;
+}
+
+.intro-header {
+    width: 48%;
+}
+.intro-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+.intro-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 16px;
+}
+.btn-contact {
+    width: 75%;
+    color: white;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.section-header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.dots-container {
+    width: 28px;
+    margin: 8px auto;
+}
+.dots {
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    background-color: rgb(184, 182, 182);
+}
+
+
+/* About Section */
+.about {
+    margin: 80px auto;
+}
+.col-1 {
+    width: 40%;
+}
+.col-2 {
+    width: 25%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-3 img {
+    width: 100%;
+}
+.about h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.about p {
+    margin-top: 20px;
+    line-height: 1.4;
+    color: #646462;
+}
+.spans {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.bar {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    margin: 15px auto;
+    margin-left: 0;
+}
+.design {
+    width: 85%;
+}
+.photography {
+    width: 90%;
+}
+.marketing {
+    width: 75%;
+}
+.admin {
+    width: 70%;
+}
+.col span {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+/* OUR BLOG */
+
+.blog {
+   background-color: #e2e1e1;
+   padding: 16px 0;
+}
+
+.blog-page {
+    margin: 0 14px;
+}
+.blog-cols {
+    width: 48%;
+    background-color: white;
+    margin: 10px auto;
+}
+.blog-img {
+    width: 45%;
+}
+.blog-img img {
+    width: 100%;
+}
+.article {
+    width: 45%;
+    margin: 0 10px;
+    text-align: left;
+}
+.article span {
+    color: red;
+    font-size: 12px;
+}
+.article h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.article p {
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+.article a {
+    background-color: rgb(226, 218, 218);
+    padding: 6px 14px;
+    border-radius: 16px;
+    color: black;
+}
+
+/*  WORK SECTION */
+
+.work {
+    background-color: white;
+    padding: 16px 0;
+}
+.col-work {
+    width: 23%;
+}
+.col-work img {
+    width: 100%;
+}
+
+/* OUR CONTACT */
+
+.contact {
+    background:  linear-gradient(to right, rgba(15, 114, 228, 0.8), rgba(19, 241, 137, 0.8));
+    color: white;
+}
+
+.form-container {
+    width: 65%;
+    padding: 30px;
+}
+
+.form-box {
+    width: 49%;
+    padding: 10px;
+    margin: 6px 0;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(119, 115, 115);  
+}
+.text-area {
+    width: 100%;
+    height: 100px;
+}
+.map-container {
+    text-align: center;
+    width: 40% ;
+}
+.map {
+    padding: 10px;
+    width: 80%;
+    height: 300px;
+    border-radius: 50%;
+}
+.form-container a {
+    margin: 0 12px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, rgba(22, 21, 21, 0.746), rgba(0,0,0,1));
+}
+.footer-info {
+    padding: 60px 0;
+    color: white;
+    border-bottom: 1px solid rgba(223, 220, 220, 0.644);
+    line-height: 1.4;
+}
+.footer-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.footer-col-about {
+    width: 45%;
+    margin-right: 50px;
+}
+.footer-col {
+    width: 20%;
+    margin-left: 20px;
+}
+.footer-col li {
+    font-size: 13px;
+}
+.copyright {
+    width: 80%;
+    padding: 20px 0;
+    color: white;
+}
